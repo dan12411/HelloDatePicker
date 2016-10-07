@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloUIDatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lto-oZ-W0Y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="D09-ag-iv6"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="497344503.13694799">
+                                    <!--2016-10-05 07:15:03 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdF-8Z-mbu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="hHp-e4-lHW"/>
+                                    <constraint firstAttribute="height" constant="30" id="xXD-bg-CmD"/>
+                                </constraints>
+                                <state key="normal" title="What Time is it?"/>
+                                <connections>
+                                    <action selector="giveMeTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f0j-kr-g8t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtm-zZ-DCN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="cKE-PP-SGl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="reCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzd-wd-cT1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IdF-8Z-mbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="32V-5P-hLU"/>
+                            <constraint firstItem="lto-oZ-W0Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CKW-We-QoW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lto-oZ-W0Y" secondAttribute="bottom" id="CsQ-xh-30r"/>
+                            <constraint firstItem="IdF-8Z-mbu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TKs-y9-Cmr"/>
+                            <constraint firstItem="dtm-zZ-DCN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l3y-E6-LIo"/>
+                            <constraint firstAttribute="trailing" secondItem="lto-oZ-W0Y" secondAttribute="trailing" id="tyi-Di-cGg"/>
+                            <constraint firstItem="IdF-8Z-mbu" firstAttribute="top" secondItem="dtm-zZ-DCN" secondAttribute="bottom" constant="43" id="wsm-xL-Imd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myDatePicker" destination="lto-oZ-W0Y" id="Kc7-gG-Y86"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
