@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     var myNumber = 10
     var mytimer: Timer?
     
+    //////////////
+    /// Button ///
+    //////////////
     @IBAction func reCount(_ sender: UIButton) {
         
         myNumber = 30
@@ -21,6 +24,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myDatePicker: UIDatePicker!
     
+    ////////////////////////
+    /// What time is it? ///
+    ////////////////////////
     @IBAction func giveMeTime(_ sender: UIButton) {
         
         let date = myDatePicker.date                        // 現在選到的時間
